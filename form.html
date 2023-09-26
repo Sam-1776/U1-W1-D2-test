@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lezione form</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Area Nome</legend>
+        <label for="username">Nome:</label>
+        <input type="text" id="username" placeholder="inserire Nome" />
+        <br />
+        <label for="surname">Cognome:</label>
+        <input type="text" id="surname" placeholder="inserire Cognome" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Area Età</legend>
+        <label for="age">Età:</label>
+        <input type="number" id="age" placeholder="inserire età" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Area Data</legend>
+        <label for="date">Data:</label>
+        <input type="date" id="date" />
+      </fieldset>
+
+      <button type="submit">Invia dati</button>
+      <button type="reset">Resetta dati</button>
+      <button type="button">Bottone</button>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>Prenotazione</legend>
+        <label for="nome-pre">Nome:</label>
+        <input type="text" id="nome-pre" placeholder="Inserire nome" required />
+        <br />
+        <label for="Orario">Ora di arrivo:</label>
+        <input type="time" id="Orario" required />
+        <br />
+        <label for="posto-pre">Scelta del posto:</label>
+        <select name="posizione" id="posto-pre">
+          <optgroup>
+            <option value=""></option>
+            <option>Dentro</option>
+            <option>Fuori</option>
+          </optgroup>
+        </select>
+        <hr />
+        <input type="checkbox" id="smocker" />
+        <label for="smocker">Fumatori</label>
+        <br />
+        <label for="auto">Auto:</label>
+        <input type="radio" name="veicolo" id="auto" />
+        <label for="moto">Moto:</label>
+        <input type="radio" name="veicolo" id="moto" />
+        <label for="bici">Bici:</label>
+        <input type="radio" name="veicolo" id="bici" />
+        <br />
+        <div>
+          <label for="note">Note:</label>
+        </div>
+        <textarea
+          name="Note"
+          id="note"
+          cols="30"
+          rows="10"
+          style="width: 100%"
+        ></textarea>
+        <hr />
+      </fieldset>
+      <button>Invia prenotazione</button>
+    </form>
+  </body>
+</html>
